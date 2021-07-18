@@ -5,33 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/banner.css">
+
     <title>Prueba Tita Media</title>
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
-            <label for="nav__checkbox" class="nav__toggle">
-                <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
-                    <path style="fill:#FC758C;"
-                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-                </svg>
-                <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-                    <path style="fill:#FC758C;"
-                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
-                </svg>
-            </label>
-
-            <ul class="nav__menu">
-                <li><a href="#"></a><img class="logo" src="logoprueba.png" alt=""></li>
-                <li><a href="#"></a>All</li>
-                <li><a href="#"></a>Branding</li>
-                <li><a href="#"></a>Web</li>
-                <li><a href="#"></a>Photography</li>
-                <li><a href="#"></a>App</li>
-                <li><a href="#"></a>
+            <a href="#"><img class="nav__logo" src="assets/img/logo.png" alt="titamedia logo"></a>
+            <div id="menuBurguer" class="nav__button_burguer">
+            </div>
+            <ul id="listMenu" class="nav__list">
+                <li class="nav__item is-active"><a href="#"></a>All</li>
+                <li class="nav__item"><a href="#"></a>Branding</li>
+                <li class="nav__item"><a href="#"></a>Web</li>
+                <li class="nav__item "><a href="#"></a>Photography</li>
+                <li class="nav__item"><a href="#"></a>App</li>
+                <!-- <li><a href="#"></a>
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 102 100"
                         style="enable-background:new 0 0 102 100;" xml:space="preserve">
@@ -49,17 +42,16 @@
                             </g>
                         </g>
                     </svg>
-                </li>
+                </li> -->
             </ul>
         </nav>
 
-        <head>
-            <div class="banner">
-            </div>
-        </head>
+        <div class="banner">
+        </div>
+
     </header>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

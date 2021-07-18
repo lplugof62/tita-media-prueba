@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    font: 400 1.6rem/1.2 'Questrial', sans-serif ;
+}
+header{
+    width: 100%;
+}

@@ -1,0 +1,92 @@
+.nav{
+    display: flex;
+    /* background-color: aqua; */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+.nav__logo{
+    max-width: 80%;
+    position: relative;
+    z-index: 10;
+}
+.nav__button_burguer, 
+.nav__button_burguer::after, 
+.nav__button_burguer::before{
+    height: .3rem;
+    width: 2.5rem;
+    background-color: #FC758C;
+    z-index: 1;
+}
+.nav__button_burguer{
+    position: relative;
+    cursor: pointer;
+}
+.nav__button_burguer::after,
+.nav__button_burguer::before{
+    content: '';
+    position: absolute;
+}
+.nav__button_burguer::after{
+    transform: translateY(8px);
+}
+.nav__button_burguer::before{
+    transform: translateY(-8px);
+}
+.nav__list{
+    top: 0;
+    left: 0;
+    list-style: none;
+    position: absolute;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+    transform: translateX(100%);
+
+}
+.nav__list.is-active{
+    transform: translateX(0);
+}
+.nav__item{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #9F9F9F;
+}
+
+@media (min-width:48em){
+    .nav__list{
+        position: static;
+        transform: translateX(0);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        height: 100%;
+    }
+    .nav__button_burguer{
+        display: none;
+    }
+    .nav__item{
+        margin-bottom: 0;
+        margin-right: 4rem;
+    }
+    .nav__item.is-active{
+        background-color: #FC758C;
+        padding: 0.2rem 2rem;
+        color: white;
+    }
+    .nav__item:last-child{
+        margin-right: 0;
+    }
+}
