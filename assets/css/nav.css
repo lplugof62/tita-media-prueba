@@ -12,7 +12,7 @@
 
 }
 .nav__logo{
-    max-width: 80%;
+    max-width: 70%;
     position: relative;
     z-index: 10;
 }
@@ -63,8 +63,11 @@
     margin-bottom: 2rem;
     font-size: 1.1rem;
     color: white;
+    cursor: pointer;
 }
-
+.nav__lupa{
+    width: 2.2rem;
+}
 @media (min-width:48em){
     .nav__list{
         position: static;
@@ -86,7 +89,7 @@
         color: #9F9F9F;
     }
     .nav__item.is-active{
-        background-color: #FC758C;
+        background-color: #FF5672;
         padding: 0.2rem 2rem;
         color: white;
        

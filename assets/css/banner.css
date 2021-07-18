@@ -6,21 +6,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #FFFEFE;
     flex-direction: column;
     
 }
 .banner__title{
     text-align: center;
-    letter-spacing: 0.8rem;
+    letter-spacing: 1rem;
     padding: 2rem;
+    font-weight: bold;
 }
 .banner__subtitle{
+    text-align: center;
     /* font-family: ; */
-    font: 400 1.6rem/1.2 'Montserrat', sans-serif ;
+    font: 400 1.1rem/1.2 'Questrial', sans-serif ;
+    color: #FEDEE3;
+    letter-spacing: 0.23rem;
 }
 .banner__button{
+    width: 113px;
+    height: 25px;
     border: none;
     outline: none;
-    padding: 0.2rem 3rem;
+    cursor: pointer;
+    color: #FC758C;
+    margin-top: 4rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.11rem;
 }
