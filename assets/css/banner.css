@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .banner{
     width: 100%;
-    height: 100%;
+    min-height: 80%;
     background-color: #FC758C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+}
+.banner__title{
+    text-align: center;
+    letter-spacing: 0.8rem;
+    padding: 2rem;
+}
+.banner__subtitle{
+    /* font-family: ; */
+    font: 400 1.6rem/1.2 'Montserrat', sans-serif ;
+}
+.banner__button{
+    border: none;
+    outline: none;
+    padding: 0.2rem 3rem;
 }
