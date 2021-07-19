@@ -25,3 +25,7 @@
     color: #C2CFD7;
     margin: 0.5rem;
 }
+.footer__social_icon:hover{
+    color: #FF5672;
+    margin: 0.5rem;
+}
