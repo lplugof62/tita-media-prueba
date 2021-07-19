@@ -83,15 +83,25 @@
     }
     .nav__item{
         margin-bottom: 0;
-        margin-right: 4rem;
+        margin-right: 2.3rem ;
+        padding: 0.4rem 1.2rem;
         color: #7B7B7B;
+    }
+    .nav__item:hover{
+        background-color: #FF5672;
+        padding: 0.4rem 1.2rem;
+        color: white;
     }
     .nav__item.is-active{
         background-color: #FF5672;
-        padding: 0.4rem 2rem;
+        padding: 0.4rem 1.2rem;
         color: white;
     }
     .nav__item:last-child{
+        margin-right: 0;
+    }
+    .nav__item:last-child:hover{
+        background-color: white;
         margin-right: 0;
     }
 }

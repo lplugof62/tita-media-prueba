@@ -32,7 +32,16 @@
     outline: none;
     cursor: pointer;
     color: #FC758C;
+    background-color: #FFFEFE;
+    text-decoration: none;
     margin-top: 4rem;
     font-size: 0.7rem;
     letter-spacing: 0.11rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.banner__button:hover{
+    color: #ffffff;
+    background-color: rgba(226, 50, 79, 0.603);
 }
