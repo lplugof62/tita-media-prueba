@@ -7,8 +7,8 @@
     justify-content: center;
     align-items: center;
     color: #FFFEFE;
-    flex-direction: column;
-    
+    flex-direction: column;    
+    margin-top: 2rem;
 }
 .banner__title{
     text-align: center;
@@ -18,7 +18,6 @@
 }
 .banner__subtitle{
     text-align: center;
-    /* font-family: ; */
     font: 400 1.1rem/1.2 'Questrial', sans-serif ;
     color: #FEDEE3;
     letter-spacing: 0.23rem;
