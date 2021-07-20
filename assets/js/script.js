@@ -3,7 +3,15 @@ const listMenu = document.getElementById('listMenu');
 menuBurguer.addEventListener('click', () => {
     listMenu.classList.toggle('is-active')
 })
-// con imágenes guardadas
+
+// -------------boton search 
+const searchBar = document.getElementById('search')
+const boton = document.getElementById('btn')
+
+boton.addEventListener('click', () => {
+    searchBar.classList.toggle('active')
+})
+// -------grid con imágenes guardadas
 const imagenes = [
     {
         "id": 1,
@@ -72,21 +80,46 @@ const imagenes = [
     }
 
 ]
-document.querySelector('.grid__container').innerHTML = imagenes.map(obj => {
-    return `<div class="grid__box"><img class="grid__img" src="assets/img/${obj.imgPro}" alt=""></img></div>`;
-}).join('\n');
+// document.querySelector('.grid__container').innerHTML = imagenes.map(obj => {
+//     return `<div class="grid__box"><img class="grid__img" src="assets/img/${obj.imgPro}" alt=""></img></div>`;
+// }).join('\n');
 
-// con consumo de la api 
-const urlAll = 'https://api.unsplash.com/photos?'
-let busqueda = 'web'
+// --------grid con consumo de la API 
+const urlAll = 'https://api.unsplash.com/photos?&'
+let busqueda = 'dogs'
 const url = `https://api.unsplash.com/search/photos?query=${busqueda}&`
 const client_id = 'YXUCY68kVeweNb5tgjeAngpsr67wK2jFZQ_YM38p5oM'
-console.log(`${url}client_id=${client_id}`)
+// console.log(`${url}client_id=${client_id}`)
+let image
+let container = document.querySelector('.grid__container')
 
-
-fetch(`${url}client_id=${client_id}`)
-    .then(response => response.json())
-    .then(data => console.log(data))
+function getImagesQuery() {
+    fetch(`${url}client_id=${client_id}`)
+        .then(response => response.json())
+        .then(data => {
+            data.results.forEach(item => {
+                console.log(item.urls.regular);
+                const box = document.createElement('div');
+                box.classList.add('grid__box');
+                box.innerHTML += `<img class="grid__img" src="${item.urls.regular}" alt=""></img>`;
+                container.appendChild(box);
+            });
+        })
+}
+function getImagesAll() {
+    fetch(`${urlAll}client_id=${client_id}`)
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(item => {
+                console.log(item.urls.regular)
+                const box = document.createElement('div');
+                box.classList.add('grid__box');
+                box.innerHTML += `<img class="grid__img" src="${item.urls.regular}" alt=""></img>`;
+                container.appendChild(box);
+            });
+        })
+}
+getImagesQuery();
 
 // Access Key
 // YXUCY68kVeweNb5tgjeAngpsr67wK2jFZQ_YM38p5oM

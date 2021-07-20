@@ -69,6 +69,7 @@ svg{
 .grid__img{
     width: 100%;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 .grid__div_button{
       display: flex;

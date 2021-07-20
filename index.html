@@ -27,8 +27,14 @@
                 <li class="nav__item"><a href="#"></a>Web</li>
                 <li class="nav__item"><a href="#"></a>Photography</li>
                 <li class="nav__item"><a href="#"></a>App</li>
-                <li class="nav__item"><a href="#"></a><img class="nav__lupa" src="assets/img/lupa.png" alt="">
+                <li class="nav__item"><a href="#"></a><div id="search" class="search">
+                    <input type="text" id="input" class="input" placeholder="Search..." >
+                    <button id="btn" class="btn">
+                        <img class="nav__lupa" src="assets/img/lupa.png" alt="">
+                    </button>
+                </div>
                 </li>
+                
             </ul>
         </nav>
 
@@ -59,9 +65,9 @@
                         fill="#ff5672" data-original="#000000" class="" />
                 </g>
             </svg>
-            <svg version="1.1" id="Capa_1" xmlns:svgjs="http://svgjs.com/svgjs"  width="10" height="10" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+            <svg version="1.1" id="Capa_1" xmlns:svgjs="http://svgjs.com/svgjs" width="10" height="10"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <style type="text/css">
                     .st0 {
                         fill: #FF5672;
@@ -88,7 +94,9 @@
         <div class="grid__div_button">
             <button class="grid__button">Show Me More</button>
         </div>
-
+        <div>
+            <img id="img" src="" alt="">
+        </div>
     </section>
 
     <footer class="footer">
